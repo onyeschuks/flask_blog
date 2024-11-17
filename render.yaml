@@ -1,0 +1,8 @@
+name: flask_blog
+services:
+  - type: web
+    name: flask_blog
+    build:
+      command: pip install -r requirement.txt
+    run:
+      command: flask run --host=0.0.0.0
